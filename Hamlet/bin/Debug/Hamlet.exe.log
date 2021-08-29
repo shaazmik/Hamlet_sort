@@ -1,0 +1,4199 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x1A14 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428C3F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txError() at C:/coder1337/TX/TXLib.h (10909)
+# 1 0x0000000000428F29 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txOnSignal() at C:/coder1337/TX/TXLib.h (10990)
+# 2 0x00007FFEEC09ADFB in C:\Windows\System32\msvcrt.dll: raise()
+# 3 0x00007FFEEC09F1FB in C:\Windows\System32\msvcrt.dll: abort()
+# 4 0x000000000043E036 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _wassert()
+# 5 0x000000000043E0E6 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _assert()
+
+# 6 0x000000000041DC13 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (62):
+
+     60: {
+     61:     assert(text_array != nullptr);
+=>   62:     assert(str_array  != nullptr);
+     63: 
+     64:     str_array = (struct Line*) calloc(quantity_lines, sizeof(struct Line));
+
+# 7 0x000000000041DDD2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 8 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 14:40:17, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 14:40:20
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x167C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428C3F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txError() at C:/coder1337/TX/TXLib.h (10909)
+# 1 0x0000000000428F29 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txOnSignal() at C:/coder1337/TX/TXLib.h (10990)
+# 2 0x00007FFEEC09ADFB in C:\Windows\System32\msvcrt.dll: raise()
+# 3 0x00007FFEEC09F1FB in C:\Windows\System32\msvcrt.dll: abort()
+# 4 0x000000000043E036 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _wassert()
+# 5 0x000000000043E0E6 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _assert()
+
+# 6 0x000000000041DC13 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (62):
+
+     60: {
+     61:     assert(text_array != nullptr);
+=>   62:     assert(str_array  != nullptr);
+     63: 
+     64:     str_array = (struct Line*) calloc(quantity_lines, sizeof(struct Line));
+
+# 7 0x000000000041DDD2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 8 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 14:40:17, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 14:40:54
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (22, 0x00): SIGABRT: Аварийное завершение программы, вызвана функция abort(). 
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xE40 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428C3F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txError() at C:/coder1337/TX/TXLib.h (10909)
+# 1 0x0000000000428F29 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _txOnSignal() at C:/coder1337/TX/TXLib.h (10990)
+# 2 0x00007FFEEC09ADFB in C:\Windows\System32\msvcrt.dll: raise()
+# 3 0x00007FFEEC09F1FB in C:\Windows\System32\msvcrt.dll: abort()
+# 4 0x000000000043E036 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _wassert()
+# 5 0x000000000043E0E6 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: _assert()
+
+# 6 0x000000000041DC13 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (62):
+
+     60: {
+     61:     assert(text_array != nullptr);
+=>   62:     assert(str_array  != nullptr);
+     63: 
+     64:     str_array = (struct Line*) calloc(quantity_lines, sizeof(struct Line));
+
+# 7 0x000000000041DDD2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 8 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 14:40:17, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 14:41:11
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC52 в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 74. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3474 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC52 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (74):
+
+     72:         pointer_ne_start = strchr(pointer_start, '\n');
+     73: 
+=>   74:         if (*(pointer_ne_start - 1) == '\r')
+     75:         {
+     76:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DDB2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 2 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 14:40:17, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 14:47:05
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC52 в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 74. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3474 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC52 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (74):
+
+     72:         pointer_ne_start = strchr(pointer_start, '\n');
+     73: 
+=>   74:         if (*(pointer_ne_start - 1) == '\r')
+     75:         {
+     76:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DDB2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 2 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 14:40:17, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 14:47:06
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC52 в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 74. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x478 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC52 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (74):
+
+     72:         pointer_ne_start = strchr(pointer_start, '\n');
+     73: 
+=>   74:         if (*(pointer_ne_start - 1) == '\r')
+     75:         {
+     76:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DDB2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 2 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 21:19:29
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC52 в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 74. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x478 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC52 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (74):
+
+     72:         pointer_ne_start = strchr(pointer_start, '\n');
+     73: 
+=>   74:         if (*(pointer_ne_start - 1) == '\r')
+     75:         {
+     76:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DDB2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (106):
+
+    104:     if (Denmark_sht->text_array == nullptr) return -1;
+    105:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  106:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    107: 
+    108:     return 0;
+
+# 2 0x000000000041DA85 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (9):
+
+      7:     FILE *in = fopen ("Hamlet_original.txt", "rb");
+      8: 
+=>    9:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     10:     {
+     11:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 21:19:29
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x940 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:32:42
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x940 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:32:42
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xB64 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:34:16
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xB64 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:34:15
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x12D0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:34:24
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DD9C в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 120. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x12D0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DD9C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (120):
+
+    118:         pointer_ne_start = strchr(pointer_start, '\n');
+    119: 
+=>  120:         if (*(pointer_ne_start - 1) == '\r')
+    121:         {
+    122:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DEFC in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (152):
+
+    150:     if (Denmark_sht->text_array == nullptr) return -1;
+    151:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  152:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    153: 
+    154:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:34:25
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DDAE в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 122. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x72C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DDAE in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (122):
+
+    120:         pointer_ne_start = strchr(pointer_start, '\n');
+    121: 
+=>  122:         if (*(pointer_ne_start - 1) == '\r')
+    123:         {
+    124:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DF0E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (154):
+
+    152:     if (Denmark_sht->text_array == nullptr) return -1;
+    153:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  154:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    155: 
+    156:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:38:52
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DDAE в функции navigation_in_line() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 122. Попытка прочесть данные по адресу 0xFFFFFFFFFFFFFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x72C (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DDAE in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: navigation_in_line() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (122):
+
+    120:         pointer_ne_start = strchr(pointer_start, '\n');
+    121: 
+=>  122:         if (*(pointer_ne_start - 1) == '\r')
+    123:         {
+    124:             *(pointer_ne_start - 1) = '\0';
+
+# 1 0x000000000041DF0E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: zapuskTRTRv2() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (154):
+
+    152:     if (Denmark_sht->text_array == nullptr) return -1;
+    153:     Denmark_sht->quantity_lines = count_line_in_text(Denmark_sht->text_array);
+=>  154:     Denmark_sht->linii = navigation_in_line(Denmark_sht->linii, Denmark_sht->text_array, Denmark_sht->quantity_lines);
+    155: 
+    156:     return 0;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 28 2021 21:19:24, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 28 2021 23:38:52
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x0000000000FDF000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xDC0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 1;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:35:25
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x0000000000FDF000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xDC0 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 1;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:35:25
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000105F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x22EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 2;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:37:08
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000105F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x22EC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 2;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:37:09
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000115F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2CF4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 3;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:37:25
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000115F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2CF4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 3;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:37:25
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000107F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3338 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 1;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:38:35
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x000000000107F000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3338 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 1;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:38:36
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x0000000000EDF001 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2268 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 2;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:38:51
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DC03 в функции count_line_in_text() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 56. Попытка прочесть данные по адресу 0x0000000000EDF001 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2268 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DC03 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: count_line_in_text() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (56):
+
+     54:     size_t count_line = 0;
+     55: 
+=>   56:     while ((line_ne_start = strchr(line_start, '\0')) != NULL)
+     57:     {
+     58:         line_start = line_ne_start + 2;
+
+# 2 0x000000000041DB41 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (31):
+
+     29:     FILE *in = fopen ("Hamlet.txt", "r");
+     30: 
+=>   31:     if (zapuskTRTRv2(in, &Denmark_sht) == -1)
+     32:     {
+     33:         printf("null pointer file\n");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 00:35:18, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 00:38:51
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B712 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000011DF000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xE94 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B712 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043B95A in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (71):
+
+     69:         for (int j = 0; j < count_lines - i - 1; j++)
+     70:         {
+=>   71:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     72:                 swap_var(&linii[j], &linii[j + 1]);
+     73: 
+
+# 2 0x000000000041DAE2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (24):
+
+     22:     fclose(in);
+     23: 
+=>   24:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     25: 
+     26:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 12:18:39, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 12:21:46
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B712 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000011DF000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xE94 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B712 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043B95A in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (71):
+
+     69:         for (int j = 0; j < count_lines - i - 1; j++)
+     70:         {
+=>   71:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     72:                 swap_var(&linii[j], &linii[j + 1]);
+     73: 
+
+# 2 0x000000000041DAE2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (24):
+
+     22:     fclose(in);
+     23: 
+=>   24:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     25: 
+     26:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 12:18:39, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 12:21:46
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000027E3000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x12E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:08:35
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000027E3000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x12E4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:08:34
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x0000000002833000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2088 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:09:42
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x0000000002833000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x2088 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:09:42
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000027F3000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xF74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:10:05
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043B6F2 в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 32. Попытка прочесть данные по адресу 0x00000000027F3000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0xF74 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043B6F2 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (32):
+
+     30:         second_var_start++;
+     31: 
+=>   32:         while (isalpha(*first_var_start ) == 0) first_var_start++;
+     33:         while (isalpha(*second_var_start) == 0) second_var_start++;
+     34:     }
+
+# 1 0x000000000043BA68 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (97):
+
+     95:         }
+     96: 
+=>   97:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+     98:         {
+     99:             i_2--;
+
+# 2 0x000000000041DAC5 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (20):
+
+     18:     fclose(in);
+     19: 
+=>   20:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     21: 
+     22:     FILE *out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 13:07:53, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 13:10:05
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#66: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5D49E414 в функции RtlAllocateHeap(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\SYSTEM32\ntdll.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#24: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main), GetLastError(): 187 (Не найдено указанное имя системного семафора). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+# 2 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+# 3 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+# 4 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+# 5 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+# 6 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+# 7 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+# 8 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+# 9 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#10 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#11 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#12 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#13 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#14 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#15 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#16 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#17 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#18 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#19 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#20 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#21 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#22 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#23 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#24 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#25 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#26 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#27 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#28 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#29 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#30 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#31 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#32 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#33 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#34 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#35 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#36 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#37 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#38 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#39 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#40 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#41 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#42 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#43 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#44 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#45 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#46 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#47 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#48 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#49 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#50 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#51 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#52 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#53 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#54 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#55 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#56 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#57 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#58 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#59 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#60 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#61 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#66: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5D49E414 в функции RtlAllocateHeap(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\SYSTEM32\ntdll.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#25: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main), GetLastError(): 187 (Не найдено указанное имя системного семафора). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+# 2 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+# 3 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+# 4 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+# 5 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+# 6 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+# 7 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+# 8 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+# 9 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#10 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#11 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#12 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#13 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#14 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#15 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#16 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#17 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#18 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#19 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#20 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#21 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#22 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#23 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#24 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#25 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#26 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#27 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#28 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#29 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#30 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#31 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#32 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#33 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#34 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#35 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#36 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#37 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#38 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#39 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#40 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#41 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#42 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#43 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#44 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#45 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#46 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#47 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+#48 0x00007FFA5C7D9F44 in C:\Windows\System32\msvcrt.dll: realloc()
+#49 0x00007FFA5C7E936C in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#50 0x00007FFA5C7E96C8 in C:\Windows\System32\msvcrt.dll: get_current_locale()
+#51 0x00007FFA5C7E9C3D in C:\Windows\System32\msvcrt.dll: setlocale()
+#52 0x0000000000426E06 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::txSetLocale()
+#53 0x000000000042FE1C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txProcessError()
+#54 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+#55 0x0000000000429CC3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#56 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#57 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#58 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#59 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#60 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#61 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#68: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5D49E414 в функции RtlAllocateHeap(). Попытка прочесть данные по адресу NULL в модуле C:\Windows\SYSTEM32\ntdll.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#26: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+# 2 0x00007FFA5C7DA131 in C:\Windows\System32\msvcrt.dll: realloc()
+# 3 0x00007FFA5C7D9C45 in C:\Windows\System32\msvcrt.dll: calloc()
+# 4 0x0000000066069C01 in C:\coder1337\TX\Windows\MgwHelp64.dll: SymGetLineFromAddrW64()
+# 5 0x00000000660445A2 in C:\coder1337\TX\Windows\MgwHelp64.dll: SymGetLineFromAddrW64()
+# 6 0x0000000066059B78 in C:\coder1337\TX\Windows\MgwHelp64.dll: SymGetLineFromAddrW64()
+# 9 0x0000000066042D1F in C:\coder1337\TX\Windows\MgwHelp64.dll: SymFromAddr()
+#10 0x000000000042E91E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txSymGetFromAddr()
+#11 0x000000000042DD1E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txCaptureStackBackTrace()
+#12 0x0000000000429BF3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+#13 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+#14 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+#15 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+#16 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+#17 0x00007FFA5D49E414 in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#18 0x00007FFA5D49B44D in C:\Windows\SYSTEM32\ntdll.dll: RtlAllocateHeap()
+#19 0x00007FFA5C7D9D40 in C:\Windows\System32\msvcrt.dll: malloc()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#69: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#27: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#70: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#28: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#71: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#29: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#72: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#30: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#73: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#31: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#74: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#32: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:46
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#75: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#33: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#76: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#34: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#77: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#35: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#78: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#36: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#79: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#37: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#80: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#38: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#81: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#39: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#82: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00007FFA5CE52DD5. Попытка прочесть данные по адресу NULL в модуле C:\Windows\System32\MSCTF.dll. Дополнительно, превышен лимит исключений _TX_EXCEPTIONS_LIMIT (16). Также превышен лимит фатальных исключений _TX_FATAL_EXCEPTIONS_LIMIT (16). Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции _set_se_translator() вы можете сами обработать эту ошибку.
+
+#40: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A0030 (64-bit), Flags: Cmdre0, Thread: 0x3430 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000428DCF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txError()
+# 1 0x0000000000429D5C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txOnExceptionSEH()
+# 2 0x000000000042962B in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: (anonymous namespace)::TX::_txVectoredExceptionHandler()
+# 3 0x00007FFA5D4E8A4C in C:\Windows\SYSTEM32\ntdll.dll: RtlDeleteAce()
+# 4 0x00007FFA5D4C1276 in C:\Windows\SYSTEM32\ntdll.dll: RtlRaiseException()
+# 5 0x00007FFA5D510CAE in C:\Windows\SYSTEM32\ntdll.dll: KiUserExceptionDispatcher()
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:13:15, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:14:47
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DA43 в функции main() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 5. Попытка записать данные по адресу NULL в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A1030 (64-bit), Flags: Cmdre0, Thread: 0x36B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DA43 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (5):
+
+      3: int main() // argv
+      4: {
+=>    5:     *(int*)0 = 0;
+      6: 
+      7:     struct Text Denmark_sht = {};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:24:00, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:35:23
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000041DA43 в функции main() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 5. Попытка записать данные по адресу NULL в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x00000000004A1030 (64-bit), Flags: Cmdre0, Thread: 0x36B8 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000041DA43 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (5):
+
+      3: int main() // argv
+      4: {
+=>    5:     *(int*)0 = 0;
+      6: 
+      7:     struct Text Denmark_sht = {};
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 14:24:00, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 14:35:23
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593AF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002932000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x17F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593AF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x0000000000459893 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 8 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 9 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#11 0x000000000043B989 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (22):
+
+     20:     fclose(in);
+     21: 
+=>   22:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     23: 
+     24:     FILE* out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:37:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:47:01
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593AF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002932000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x17F4 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593AF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x0000000000459893 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 8 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 9 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#11 0x000000000043B989 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (22):
+
+     20:     fclose(in);
+     21: 
+=>   22:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     23: 
+     24:     FILE* out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:37:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:47:01
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593AF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x00000000028A2000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x1220 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593AF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x0000000000459893 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 8 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 9 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#11 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#12 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#13 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#14 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#15 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#16 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#17 0x000000000043B989 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (22):
+
+     20:     fclose(in);
+     21: 
+=>   22:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     23: 
+     24:     FILE* out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:37:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:48:58
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593AF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x00000000028A2000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x1220 (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593AF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x0000000000459893 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 8 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 9 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#11 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#12 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#13 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#14 0x0000000000459947 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#15 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#16 0x000000000045990E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#17 0x000000000043B989 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (22):
+
+     20:     fclose(in);
+     21: 
+=>   22:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     23: 
+     24:     FILE* out = fopen("Hamlet_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:37:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:48:58
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004591CF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002902000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x5FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004591CF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x00000000004596B3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 8 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 9 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#11 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#12 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#13 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#14 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#15 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#16 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#17 0x000000000043B983 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (21):
+
+     19:     fclose(in);
+     20: 
+=>   21:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     22: 
+     23:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:59:21, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:59:41
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004591CF в функции comporator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002902000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x5FC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004591CF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x00000000004596B3 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (102):
+
+    100:         }
+    101: 
+=>  102:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    103:         {
+    104:             i_2--;
+
+# 2 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 3 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 4 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 5 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 6 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 7 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+# 8 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+# 9 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#10 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#11 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#12 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#13 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#14 0x0000000000459767 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (125):
+
+    123:     if (i_1 < count_lines)
+    124:     {
+=>  125:         paramon_sort(&linii[i_1], count_lines - i_1, paramonator);
+    126:     }
+    127: }
+
+#15 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#16 0x000000000045972E in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (120):
+
+    118:     if(i_2 > 0)
+    119:     {
+=>  120:         paramon_sort(linii, i_2 + 1, paramonator);
+    121:     }
+    122: 
+
+#17 0x000000000043B983 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (21):
+
+     19:     fclose(in);
+     20: 
+=>   21:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_paramonator);
+     22: 
+     23:     return 0;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 16:59:21, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 16:59:41
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000045950D в функции comporator_refrigerator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 59. Попытка прочесть данные по адресу 0x00000000028AFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x3528 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000045950D in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_refrigerator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (59):
+
+     57:         second_var_start--;
+     58: 
+=>   59:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start && *first_var_start != ' ') first_var_start--;
+     60:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start && *second_var_start != ' ') second_var_start--;
+     61:     }
+
+# 1 0x00000000004596EF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (76):
+
+     74:         for (int j = 0; j < count_lines - i - 1; j++)
+     75:         {
+=>   76:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     77:                 swap_var(&linii[j], &linii[j + 1]);
+     78: 
+
+# 2 0x000000000043BA5F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (32):
+
+     30:     fclose(out);
+     31: 
+=>   32:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_refrigerator);
+     33: 
+     34:     out = fopen("Hamlet_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 17:04:03, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 17:04:06
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000045950D в функции comporator_refrigerator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 59. Попытка прочесть данные по адресу 0x00000000028AFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0x3528 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000045950D in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_refrigerator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (59):
+
+     57:         second_var_start--;
+     58: 
+=>   59:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start && *first_var_start != ' ') first_var_start--;
+     60:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start && *second_var_start != ' ') second_var_start--;
+     61:     }
+
+# 1 0x00000000004596EF in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (76):
+
+     74:         for (int j = 0; j < count_lines - i - 1; j++)
+     75:         {
+=>   76:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     77:                 swap_var(&linii[j], &linii[j + 1]);
+     78: 
+
+# 2 0x000000000043BA5F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (32):
+
+     30:     fclose(out);
+     31: 
+=>   32:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_refrigerator);
+     33: 
+     34:     out = fopen("Hamlet_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 17:04:03, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 17:04:07
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0000000000459523 в функции comporator_refrigerator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 59. Попытка прочесть данные по адресу 0x000000000287FFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0xC60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000459523 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_refrigerator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (59):
+
+     57:         second_var_start--;
+     58: 
+=>   59:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start && *first_var_start != ' ') first_var_start--;
+     60:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start && *second_var_start != ' ') second_var_start--;
+     61:     }
+
+# 1 0x0000000000459705 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (76):
+
+     74:         for (int j = 0; j < count_lines - i - 1; j++)
+     75:         {
+=>   76:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     77:                 swap_var(&linii[j], &linii[j + 1]);
+     78: 
+
+# 2 0x000000000043BA5F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (32):
+
+     30:     fclose(out);
+     31: 
+=>   32:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_refrigerator);
+     33: 
+     34:     out = fopen("Hamlet_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 17:04:59, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 17:05:02
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x0000000000459523 в функции comporator_refrigerator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 59. Попытка прочесть данные по адресу 0x000000000287FFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000502770 (64-bit), Flags: Cmdre0, Thread: 0xC60 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0000000000459523 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comporator_refrigerator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (59):
+
+     57:         second_var_start--;
+     58: 
+=>   59:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start && *first_var_start != ' ') first_var_start--;
+     60:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start && *second_var_start != ' ') second_var_start--;
+     61:     }
+
+# 1 0x0000000000459705 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (76):
+
+     74:         for (int j = 0; j < count_lines - i - 1; j++)
+     75:         {
+=>   76:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     77:                 swap_var(&linii[j], &linii[j + 1]);
+     78: 
+
+# 2 0x000000000043BA5F in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (32):
+
+     30:     fclose(out);
+     31: 
+=>   32:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comporator_refrigerator);
+     33: 
+     34:     out = fopen("Hamlet_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 17:04:59, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 17:05:02
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043BB8C в функции find_alnum_reverse() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 64. Попытка прочесть данные по адресу 0x00000000027BFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000509770 (64-bit), Flags: Cmdre0, Thread: 0x28D4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043BB8C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: find_alnum_reverse() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (64):
+
+     62:         while (1) {
+     63: 
+=>   64:            if (isalnum ((int)(unsigned char)*ch) && *ch != '\0' && *ch != ' ')
+     65:                     return ch;
+     66: 
+
+# 1 0x000000000043BD30 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comp_void_reverse() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (90):
+
+     88:     while (str1 != uno && str2 != duo) {
+     89: 
+=>   90:             str1 = find_alnum_reverse (str1);
+     91:             str2 = find_alnum_reverse (str2);
+     92: 
+
+# 2 0x0000000000459C15 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (80):
+
+     78:         for (int j = 0; j < count_lines - i - 1; j++)
+     79:         {
+=>   80:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     81:                 swap_var(&linii[j], &linii[j + 1]);
+     82: 
+
+# 3 0x000000000043BF6C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (153):
+
+    151:     fclose(out);
+    152: 
+=>  153:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comp_void_reverse);
+    154: 
+    155:     out = fopen("Text_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 18:00:57, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 18:04:18
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x000000000043BB8C в функции find_alnum_reverse() в файле C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp на строке 64. Попытка прочесть данные по адресу 0x00000000027BFFFF в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000509770 (64-bit), Flags: Cmdre0, Thread: 0x28D4 (Main), GetLastError(): 183 (Невозможно создать файл, так как он уже существует). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x000000000043BB8C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: find_alnum_reverse() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (64):
+
+     62:         while (1) {
+     63: 
+=>   64:            if (isalnum ((int)(unsigned char)*ch) && *ch != '\0' && *ch != ' ')
+     65:                     return ch;
+     66: 
+
+# 1 0x000000000043BD30 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comp_void_reverse() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (90):
+
+     88:     while (str1 != uno && str2 != duo) {
+     89: 
+=>   90:             str1 = find_alnum_reverse (str1);
+     91:             str2 = find_alnum_reverse (str2);
+     92: 
+
+# 2 0x0000000000459C15 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: bubble_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (80):
+
+     78:         for (int j = 0; j < count_lines - i - 1; j++)
+     79:         {
+=>   80:             if (( paramonator(&linii[j], &linii[j + 1]) ) > 0)
+     81:                 swap_var(&linii[j], &linii[j + 1]);
+     82: 
+
+# 3 0x000000000043BF6C in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (153):
+
+    151:     fclose(out);
+    152: 
+=>  153:     bubble_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comp_void_reverse);
+    154: 
+    155:     out = fopen("Text_sorted.txt", "a");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 18:00:57, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 18:04:17
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib предупреждает:
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593ED в функции comparator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002892000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000509770 (64-bit), Flags: Cmdre0, Thread: 0x1EFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593ED in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comparator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x00000000004598E7 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (106):
+
+    104:         }
+    105: 
+=>  106:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    107:         {
+    108:             i_2--;
+
+# 2 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 3 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 4 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 5 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 6 0x000000000043B9B1 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (28):
+
+     26:     fclose(in);
+     27: 
+=>   28:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comparator_paramonator);
+     29: 
+     30:     FILE* out = fopen("Text_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 18:07:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 18:07:33
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe,
+
+ВНЕЗАПНО: signal (11, 0x00): SIGSEGV: Доступ по неверному указателю. Ставьте ассерты! 
+
+Нарушение доступа к памяти.
+
+#1: Исключение EXCEPTION_ACCESS_VIOLATION (0xC0000005) при выполнении кода по адресу 0x00000000004593ED в функции comparator_paramonator() в файле C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp на строке 37. Попытка прочесть данные по адресу 0x0000000002892000 в модуле C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe. Спасибо _txVectoredExceptionHandler(), что сообщил. Люблю его <3
+
+С помощью функции signal() вы можете сами обработать эту ошибку.
+
+#2: TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400], Instance: 0x0000000000509770 (64-bit), Flags: Cmdre0, Thread: 0x1EFC (Main). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x00000000004593ED in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: comparator_paramonator() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (37):
+
+     35:         second_var_start++;
+     36: 
+=>   37:         while (isalnum((int)(unsigned char)*first_var_start ) == 0 && first_var_start != first_var_ne_start) first_var_start++;
+     38:         while (isalnum((int)(unsigned char)*second_var_start) == 0 && second_var_start != second_var_ne_start) second_var_start++;
+     39:     }
+
+# 1 0x00000000004598E7 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (106):
+
+    104:         }
+    105: 
+=>  106:         while(paramonator(&linii[i_2], &middle_awp) > 0)
+    107:         {
+    108:             i_2--;
+
+# 2 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 3 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 4 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 5 0x0000000000459962 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: paramon_sort() at C:/Users/Daniil/Documents/Hamlet/sorted_func.cpp (124):
+
+    122:     if(i_2 > 0)
+    123:     {
+=>  124:         paramon_sort(linii, i_2 + 1, paramonator);
+    125:     }
+    126: 
+
+# 6 0x000000000043B9B1 in C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe: main() at C:/Users/Daniil/Documents/Hamlet/Hamlet.cpp (28):
+
+     26:     fclose(in);
+     27: 
+=>   28:     paramon_sort(Denmark_sht.linii, Denmark_sht.quantity_lines, comparator_paramonator);
+     29: 
+     30:     FILE* out = fopen("Text_sorted.txt", "w");
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2021-07-19 01:45:49 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\coder1337\TX\TXLib.h
+Compiled:	Aug 29 2021 18:07:28, GNU g++ 8.1.0, std=201402L, MinGW-W64 Runtime 6.0.0 (alpha - rev. 0) 0000-00-00, 64-bit, Debug
+Started:	Aug 29 2021 18:07:34
+
+Run file:	C:\Users\Daniil\Documents\Hamlet\bin\Debug\Hamlet.exe
+Directory:	C:\Users\Daniil\Documents\Hamlet
+
+--------------------------------------------------
