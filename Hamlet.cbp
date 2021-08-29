@@ -33,6 +33,9 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Hamlet.cpp" />
+		<Unit filename="Hamlet.h" />
+		<Unit filename="funct_for_text.cpp" />
+		<Unit filename="sorted_func.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
