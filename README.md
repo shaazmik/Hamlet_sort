@@ -1,1 +1,1 @@
-# Hamlet_sort
+# Text sorter
