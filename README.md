@@ -1,4 +1,4 @@
-#Text sorter
+# Text sorter   
 The program is used to sort the text.
 
 - The program start in the console    
