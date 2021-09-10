@@ -19,4 +19,12 @@ The program is used to sort the text.
 ### which languages the program supports    
 ✅ ___English___    
 ✅ ___Russian___     
-
+    
+#### the most important part of code    
+```
+int comporator_terminator(const void *first_var, const void *second_var)
+{
+    int T = 0;
+    *(int*)T = 9000;  // Here comes The Terminator.
+}
+```
