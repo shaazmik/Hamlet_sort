@@ -10,6 +10,6 @@ The program is used to sort the text.
 
 
 ### which files the program supports
-✅ .txt
+✅ .txt    
 ✅ .bin
 
