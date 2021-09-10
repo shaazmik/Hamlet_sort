@@ -17,6 +17,6 @@ The program is used to sort the text.
 :negative_squared_cross_mark: .rtf    
 
 ### which languages the program supports    
-✅ ___Russian___    
 ✅ ___English___    
+✅ ___Russian___     
 
