@@ -6,8 +6,13 @@ The program is used to sort the text.
 - Enter the name of your file, with the extension    
 - Press "Enter" button    
 - You get a text file in the directory with the program
-- Output file name is 'Text_sorted.txt'
+- Output file name is 'Text_sorted.txt'    
 
+
+## Style of output file    
+- First you get the text that is sorted alphabetically.    
+- Next comes the text sorted by rhyme.
+- At the end is the original text.
 
 ### which files the program supports
 ✅ .txt    
