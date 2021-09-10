@@ -21,7 +21,7 @@ The program is used to sort the text.
 ✅ ___Russian___     
     
 #### the most important part of code    
-```
+```C
 int comporator_terminator(const void *first_var, const void *second_var)
 {
     int T = 0;
