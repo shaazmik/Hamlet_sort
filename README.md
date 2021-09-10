@@ -13,6 +13,10 @@ The program is used to sort the text.
 ✅ .txt    
 ✅ .bin    
 :negative_squared_cross_mark: .doc    
-:negative_squared_cross_mark: .docx
-:negative_squared_cross_mark: .rtf
+:negative_squared_cross_mark: .docx   
+:negative_squared_cross_mark: .rtf    
+
+### which languages the program supports    
+✅ ___Russian (bold italic)___    
+✅ ___English (bold italic)___    
 
