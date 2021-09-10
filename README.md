@@ -11,5 +11,7 @@ The program is used to sort the text.
 
 ### which files the program supports
 ✅ .txt    
-✅ .bin
+✅ .bin    
+:negative_squared_cross_mark: .doc    
+:negative_squared_cross_mark: .docx
 
