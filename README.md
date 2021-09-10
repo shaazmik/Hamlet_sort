@@ -14,4 +14,5 @@ The program is used to sort the text.
 ✅ .bin    
 :negative_squared_cross_mark: .doc    
 :negative_squared_cross_mark: .docx
+:negative_squared_cross_mark: .rtf
 
